@@ -1,1 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize css -->
+    <link rel="stylesheet" href="/resources/normalize.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="/resources/Magnific-Popup-master/Magnific-Popup-master/dist/magnific-popup.css">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="/resources/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet"
+        href="/assets/resources/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="/resources/animate.css-main/animate.css">
+    <title>PROSAVA</title>
+    <script>
+        var t = 0;
+        function crousel() {
+            setInterval(changeImage, 5000);
+        }
+        function changeImage() {
+            var image_location;
+            var header_title;
+            var header_content;
+            if (t % 3 == 0) {
+                image_location = "linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url(/assets/image/header-bg.jpg)";
+                header_title = "Construnction is an art of building dreams.construnction is an art of building dreams";
+                header_content = "Our principal focus is developing and executing projects for Mining, Metallurgical and process industries.Our principal focus is developing and executing projects for Mining, Metallurgical and process industries.";
+
+            }
+            else
+                if (t % 3 == 1) {
+                    image_location = "linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url(/assets/image/header2.jpg)";
+                    header_content = "Our principal focus is developing and executing projects for Mining, Metallurgical and process industries.Our principal focus is developing and executing projects for Mining, Metallurgical and process industries.";
+                    header_title = "Construnction is an art of building dreams.construnction is an art of building dreams";
+                }
+                else {
+                    image_location = "linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url(/assets/image/header3.jpg)";
+                    header_content = "Our principal focus is developing and executing projects for Mining, Metallurgical and process industries.Our principal focus is developing and executing projects for Mining, Metallurgical and process industries.";
+                    header_title = "Construnction is an art of building dreams.construnction is an art of building dreams";
+                }
+            document.getElementById("intro").style.backgroundImage = image_location;
+            t += 1;
+        }
+    </script>
+</head>
+
+<body onload="crousel()">
+    <!-- header  -->
+    <header class="header" id="intro">
+        <nav class="navbar">
+            <div class="container">
+                <div class="brand-and-toggler">
+                    <a href="/" class="navbar-brand">
+                        Prosava
+                    </a>
+                    <button type="button" class="navbar-toggler" id="navbar-toggler">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#aboutus" class="nav-link">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#feature" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#team" class="nav-link">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#testimonial" class="nav-link">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#testimonial" class="nav-link">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero-div center container">
+            <!-- <h1>we make your website stand out</h1> -->
+            <h2 id="header-title">Construnction is an art of building dreams.construnction is an art of building dreams
+            </h2>
+            <p class="animate__animated animate__fadeInUp animate__slow" id="header-content">Our company provides
+                design,
+                engineering, procurement, construction and integrated project management services from ‘Concept to
+                Commissioning’ with highest quality and safety standards.</p>
+
+            <div class="hero-btns animate__animated animate__fadeInUp animate__slow">
+                <button type="button" class="btn-trans">vist to learn more</button>
+            </div>
+        </div>
+    </header>
+    <!-- End of header -->
+
+    <!-- detail section -->
+    <section class="detail" id="aboutus">
+        <div class="container">
+            <div class="row">
+                <div class="detail-item wow animate__animated animate__fadeInLeft animate__slow">
+                    <span><img src="/image/logo.png" style="height: 100px;width: 100px;"></span>
+                    <h2>About us</h2>
+                    <div class="line"></div>
+                    <p class="text" style="text-align: center;">PROSAVA PRIVATE LIMITED company provides design, engineering,
+                        procurement, construction and integrated project management services from ‘Concept to
+                        Commissioning’ with highest quality and safety standards.</p>
+                    <img src="/image/FlowChartprosava.png" alt="flowchart" >    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of detail section -->
+
+
+
+    <!-- features section -->
+    <section class="feature" id="feature">
+        <div class="container">
+            <div class="row">
+                <div class="feature-left wow animate__animated animate__fadeInUp animate__slow">
+                    <img src="/image/services.jpg" alt="mockup">
+                </div>
+                <div class="feature-right wow animate__animated animate__fadeInUp animate__slow">
+                    <div class="title">
+                        <h2>Explore Our Services</h2>
+                        <p class="text">We provide solutions within our four core offerings:</p>
+                    </div>
+                    <div class="feature-item">
+                        <span><i class="fas fa-cogs"></i></span>
+                        <div>
+                            <h3>Project conception and engineering development</h3>
+                            <h4><b>We deliver : </b></h4>
+                            <ol type="1">
+                                <li>Conceptual plan and layout of facilities. </li>
+                                <li>Preliminary economic assessment . </li>
+                                <li>Pre-feasibility study . </li>
+                                <li>Basic engineering, process optimization and flow sheets. </li>
+                                <li>Detailed engineering, civil and structural details, piping and electrical  layout, instrumentation and control engineering. </li>
+                                <li>Detailed cost estimation. </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span><i class="fas fa-cogs"></i></span>
+                        <div>
+                            <h3>Failure analysis, loss assessment & Rehabilitation projects</h3>
+                            <h4><b>We have experts & well experienced workment to undertake following tasks : </b></h4>
+                            <ol type="1">
+                                <li>Analysis of failure and assessment of loss. </li>
+                                <li>Study of deterioration of structures  . </li>
+                                <li>Develop & recommend repair methodology  . </li>
+                                <li>Prepair repair estimates . </li>
+                                <li>Undertake repair & rehabilitation jobs. </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span><i class="fas fa-cogs"></i></span>
+                        <div>
+                            <h3>Manufacturing & Spare Parts development </h3>
+                            <h4><b>Our well equipped workshop at Faridabad is capable to develop & deliver : </b></h4>
+                            <ol type="1">
+                                <li>Material handling spares like Air slides, screw conveyors, conveyor spares. </li>
+                                <li>Spares for process piping, ash handling etc. </li>
+                                <li>Customized equipment for domestic & Industrial waste management.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <span><i class="fas fa-cogs"></i></span>
+                        <div>
+                            <h3>Construction monitoring and quality assurance </h3>
+                            <h4><b>We excel in : </b></h4>
+                            <ol type="1">
+                                <li>Planning organizing and scheduling: Listing of all major tasks, preparation of WBS, estimation of time and cost, Assessment of dependency and development of critical path. </li>
+                                <li>Ensuring effective manpower and equipment mobilization. </li>
+                                <li>Ensuring performance of construction contract.</li>
+                                <li>Construction Management and supervision.</li>
+                                <li>Cost control and quality checks.</li>
+                                <li>Commisioning support.</li>
+                                <li>Startup assistance.</li>
+                                <li>Post implementation review.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of features section -->
+
+    <!-- sample video section -->
+    <section class="video">
+        <div class="container">
+            <a href="https://www.youtube.com/watch?v=Ll0nwo_0x-w" class="center popup-youtube">
+                <i class="fas fa-play"></i>
+            </a>
+            <h2 class="wow animate__animated animate__fadeInUp animate__slow">Watch Sample Video</h2>
+            <p class="wow animate__animated animate__fadeInUp animate__slow">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Dolores doloribus quo a nesciunt cupiditate odio numquam possimus explicabo.
+                Consectetur, quis!</p>
+        </div>
+    </section>
+    <!-- end sample video section -->
+
+    <!-- team section -->
+
+    <!-- <section class="team" id="team">
+        <div class="container">
+            <div class="title">
+                <h2 class="wow animate__animated animate__bounceIn animate__slow">Meet Best People</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+
+            <div class="row owl-carousel owl-theme wow animate__animated animate__fadeInUp animate__slow">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="/assets/image/team-1.jpg" alt="team-1">
+                        <div class="team-icons">
+                            <a href="#" class="center">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="center">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="center">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Full Name Here</h3>
+                        <span>Construction Engineer</span>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="/assets/image/team-2.jpg" alt="team-2">
+                        <div class="team-icons">
+                            <a href="#" class="center">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="center">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="center">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Full Name Here</h3>
+                        <span>Network Engineer</span>
+                    </div>
+                </div>
+
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="/assets/image/team-3.jpg" alt="team-3">
+                        <div class="team-icons">
+                            <a href="#" class="center">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="center">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="center">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Full Name Here</h3>
+                        <span>Resource Engineer</span>
+                    </div>
+                </div>
+
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="/assets/image/team-4.jpg" alt="team-4">
+                        <div class="team-icons">
+                            <a href="#" class="center">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="center">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="center">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Full Name Here</h3>
+                        <span>Site Engineer</span>
+                    </div>
+                </div>
+
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="/assets/image/team-5.jpg" alt="team-5">
+                        <div class="team-icons">
+                            <a href="#" class="center">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="center">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="center">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Full Name Here</h3>
+                        <span>Worker</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+    <!-- end team section -->
+
+    <!-- faq section  -->
+
+    <section class="faq">
+        <div class="container">
+            <div class="title">
+                <h2 class="wow animate__animated animate__bounceIn animate__slow">Have Any Questions</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="row wow animate__animated animate__fadeInUp animate__slow">
+                <div class="faq-item">
+                    <div class="faq-head">
+                        <h3>What is Web Development?</h3>
+                        <span><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta unde debitis
+                            nobis et mollitia? Quibusdam quam illum veniam cupiditate? Molestias minima velit animi
+                            laborum eligendi.</p>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo quas autem
+                            voluptates dolor ab sint.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-head">
+                        <h3>Which technology are important for Web Development?</h3>
+                        <span><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta unde debitis
+                            nobis et mollitia? Quibusdam quam illum veniam cupiditate? Molestias minima velit animi
+                            laborum eligendi.</p>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo quas autem
+                            voluptates dolor ab sint.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-head">
+                        <h3>What type of websites are good for business purpose?</h3>
+                        <span><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-content">
+                        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta unde debitis
+                            nobis et mollitia? Quibusdam quam illum veniam cupiditate? Molestias minima velit animi
+                            laborum eligendi.</p>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo quas autem
+                            voluptates dolor ab sint.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- end faq section  -->
+
+    <!-- pricing section -->
+
+    <!-- <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="title">
+                <h2 class = "wow animate__animated animate__bounceIn animate__slow">Our Package</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="row wow animate__animated animate__fadeInUp animate__slow">
+                <div class="pricing-item">
+                    <h2>Business Version</h2>
+                    <div class="price">
+                        <span>$ 120</span>
+                        <span class="text">Monthly</span>
+                    </div>
+                    <ul>
+                        <li>24 Accounts</li>
+                        <li>10 GB Storage</li>
+                        <li>Lifetime Support</li>
+                        <li>Reliable Service</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-item">
+                    <h2>Professional Version</h2>
+                    <div class="price">
+                        <span>$ 120</span>
+                        <span class="text">Monthly</span>
+                    </div>
+                    <ul>
+                        <li>24 Accounts</li>
+                        <li>10 GB Storage</li>
+                        <li>Lifetime Support</li>
+                        <li>Reliable Service</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-item">
+                    <h2>Standard Version</h2>
+                    <div class="price">
+                        <span>$ 120</span>
+                        <span class="text">Monthly</span>
+                    </div>
+                    <ul>
+                        <li>24 Accounts</li>
+                        <li>10 GB Storage</li>
+                        <li>Lifetime Support</li>
+                        <li>Reliable Service</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- end pricing section -->
+
+    <!-- testimonial section  -->
+
+    <!-- <section class="testimonial" id="testimonial">
+        <div class="container">
+            <div class="title">
+                <h2 class="wow animate__animated animate__bounceIn animate__slow">Testimonial Words</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="row owl-carousel owl-theme wow animate__animated animate__fadeInUp animate__slow">
+                <div class="testimonial-item">
+                    <div class="testimonial-img">
+                        <img src="/assets/image/test-1.jpg" alt="test1">
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, aperiam voluptatibus earum
+                        dicta illum suscipit aliquid. Nihil, eius fugit. Voluptatum.</p>
+                    <span>Someone's Name</span>
+                </div>
+
+                <div class="testimonial-item">
+                    <div class="testimonial-img">
+                        <img src="/assets/image/test-2.jpg" alt="test2">
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, aperiam voluptatibus earum
+                        dicta illum suscipit aliquid. Nihil, eius fugit. Voluptatum.</p>
+                    <span>Someone's Name</span>
+                </div>
+
+                <div class="testimonial-item">
+                    <div class="testimonial-img">
+                        <img src="/assets/image/test-3.jpg" alt="test3">
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, aperiam voluptatibus earum
+                        dicta illum suscipit aliquid. Nihil, eius fugit. Voluptatum.</p>
+                    <span>Someone's Name</span>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+    <!-- end testimonial section  -->
+
+    <!-- contact section -->
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="title">
+                <h2 class="wow animate__animated animate__bounceIn animate__slow">Contact Us</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+
+            <div class="row wow animate__animated animate__fadeInUp animate__slow">
+                <div class="contact-left">
+                    <h2>Send Message Here</h2>
+                    <form>
+                        <input type="text" class="form-control" placeholder="Name">
+                        <input type="email" class="form-control" placeholder="Email">
+                        <textarea placeholder="Message" rows="6"></textarea>
+                        <button type="submit" class="submit-btn">Send Now</button>
+                    </form>
+                </div>
+
+                <div class="contact-right">
+                    <div>
+                        <h2>Visit Office</h2>
+                        <p class="text">D14/15 FF, Independent Floor, Ardee City, Gurugram, Haryana, India</p>
+                    </div>
+                    <div>
+                        <h2>Call Us</h2>
+                        <p class="text">+91 124 4048497 / +91 997 1907082</p>
+                    </div>
+                    <div>
+                        <h2>Send Email</h2>
+                        <p class="text">contact@prosava.in / ceo@prosava.in</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end contact section -->
+
+    <!-- footer -->
+    <footer class="footer center">
+        <div class="container">
+            <p class="text">Copyright &copy; Prosava Website | All Rights Reserved</p>
+            <div class="footer-links">
+                <a href="#" class="center">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="center">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="center">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="center">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="center">
+                    <i class="fab fa-pinterest"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+
+    <!-- Jquery -->
+    <script src="/resources/jquery-3.6.0.js"></script>
+    <!-- Custom js -->
+    <script src="/script.js"></script>
+    <!-- magnific popup -->
+    <script src="/resources/Magnific-Popup-master/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
+    <!-- owl carousel -->
+    <script src="/resources/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <!-- wow js -->
+    <script src="/resources/WOW-master/dist/wow.js"></script>
+</body>
+
+</html>
+
+
+<!-- About us
+
+Its principal focus is developing and executing projects for Mining,
+                        Metallurgical and process industries . With its head office located in Gurgaon, Prosava operates
+                        with its network of specialists located near all major manufacturing locations of the country to
+                        ensure availability of right manpower and consultants as per client’s requirement.
+                        Prosava is driven by its vision to build itself into best in class EPCM and project management
+                        organization. The team at Prosava is committed to deliver excellence to support the long term
+                        plan of its clients in a sustainable manner.
+                        The management team of Prosava is lead by Mr Om Pandey who is an aluminus of IIT Kharagpur with
+                        corporate experience of more than 27 years in minerals and metal sector both in India and
+                        abroad. He has served as Chief Procurement Officer with ArcelorMittal group and has been widely
+                        acknowledged for his dynamic leadership, vision and commitment. He has also worked with Hindalco
+                        Industries Ltd and Jindal Stainless and has been associated in setting up various greenfield and
+                        brownfield expansion projects in his corporate role. -->
